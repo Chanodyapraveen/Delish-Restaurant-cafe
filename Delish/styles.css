@@ -1,0 +1,1055 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Jost', sans-serif;
+    background: #FFFFFF;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+/* Header */
+.header {
+    width: 100%;
+    height: 152px;
+    background: #111111;
+    position: relative;
+}
+
+.top-bar {
+    width: 100%;
+    max-width: 1760px;
+    height: 37px;
+    margin: 0 auto;
+    padding: 25px 80px 0;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.hours-info,
+.hours-info2 {
+    font-family: 'Jost';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+    color: #FFFFFF;
+    margin-right: 20px;
+}
+
+.contact-info {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.email,
+.phone,
+.address {
+    font-family: 'Jost';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+    color: #FFFFFF;
+}
+
+.email {
+    text-transform: lowercase;
+}
+
+.divider {
+    width: 100%;
+    max-width: 1760px;
+    height: 1px;
+    margin: 0 auto;
+    background: #201F1F;
+}
+
+.header-main {
+    width: 100%;
+    max-width: 1760px;
+    margin: 0 auto;
+    padding: 20px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo-icon {
+    width: 50px;
+    height: 50px;
+    background: #CB3A1A;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.logo-text {
+    font-family: 'Jost';
+    font-weight: 700;
+    font-size: 24px;
+    color: #FFFFFF;
+}
+
+.navigation {
+    font-family: 'Kumbh Sans';
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    text-align: center;
+    flex: 1;
+}
+
+.book-table-btn {
+    width: 245px;
+    height: 50px;
+    border: 1px solid #CB3A1A;
+    background: transparent;
+    color: #FFFFFF;
+    font-family: 'Jost';
+    font-weight: 600;
+    font-size: 16px;
+    text-transform: uppercase;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+/* Hero Slider */
+.slider {
+    width: 100%;
+    height: 100vh;
+    min-height: 850px;
+    position: relative;
+    background: url('hero-bg.jpg') center/cover, rgba(10, 5, 4, 0.67);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-frame {
+    width: 90%;
+    max-width: 1760px;
+    height: 80%;
+    max-height: 692px;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    position: relative;
+}
+
+.opening-hours-left,
+.opening-hours-right {
+    position: absolute;
+    font-family: 'Jost';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 23px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.opening-hours-left {
+    left: -80px;
+}
+
+.opening-hours-right {
+    right: -80px;
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+    max-width: 681px;
+}
+
+.hero-subtitle1,
+.hero-subtitle2 {
+    font-family: 'Jost';
+    font-weight: 600;
+    font-size: clamp(24px, 5vw, 48px);
+    line-height: 1.4;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.hero-title {
+    font-family: 'Jost';
+    font-weight: 700;
+    font-size: clamp(40px, 8vw, 80px);
+    line-height: 1.4;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    margin: 20px 0;
+}
+
+.hero-buttons {
+    position: absolute;
+    bottom: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.btn-book,
+.btn-menu {
+    font-family: 'Jost';
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 23px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+.btn-underline {
+    width: 118px;
+    height: 2px;
+    background: #FFFFFF;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+}
+
+.slider-dots {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 12px;
+}
+
+.dot {
+    width: 55px;
+    height: 55px;
+    background: #D9D9D9;
+    border: 1px solid #000000;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* About Section */
+.about {
+    width: 100%;
+    padding: 80px 20px;
+    position: relative;
+}
+
+.about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+}
+
+.about-image-container {
+    position: relative;
+}
+
+.decorative-element {
+    width: 234px;
+    height: 234px;
+    background: url('3731.jpg') center/cover;
+    position: absolute;
+    top: -30px;
+    left: -30px;
+    z-index: 1;
+}
+
+.about-image {
+    width: 100%;
+    aspect-ratio: 1;
+    background: url('dish-image.jpg') center/cover, #D9D9D9;
+    position: relative;
+    z-index: 2;
+}
+
+.about-content {
+    padding: 20px 0;
+}
+
+.reservation-badge {
+    display: inline-flex;
+    padding: 8px 16px;
+    background: #CB3A1A;
+    border-radius: 5px;
+    font-family: 'Jost';
+    font-weight: 600;
+    font-size: 14px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.about-title {
+    font-family: 'Jost';
+    font-weight: 700;
+    font-size: clamp(28px, 4vw, 40px);
+    line-height: 1.25;
+    color: #111111;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    max-width: 430px;
+}
+
+.about-description {
+    font-family: 'Jost';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #74787C;
+    margin-bottom: 40px;
+}
+
+.phone-section {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.phone-icon {
+    width: 50px;
+    height: 50px;
+    background: #CB3A1A;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+    font-size: 16px;
+    flex-shrink: 0;
+}
+
+.phone-info .hotline-text {
+    font-family: 'Jost';
+    font-weight: 500;
+    font-size: 14px;
+    color: #74787C;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.phone-info .phone-number {
+    font-family: 'Jost';
+    font-weight: 700;
+    font-size: 20px;
+    color: #111111;
+    text-transform: uppercase;
+}
+
+/* Services Section */
+.services {
+    width: 100%;
+    padding: 80px 0;
+    background: #FAF4EE;
+    position: relative;
+}
+
+.services-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.services-title {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.services-badge {
+    display: inline-flex;
+    padding: 8px 16px;
+    background: #CB3A1A;
+    border-radius: 5px;
+    font-family: 'Jost';
+    font-weight: 600;
+    font-size: 14px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.services-heading {
+    font-family: 'Jost';
+    font-weight: 700;
+    font-size: clamp(28px, 4vw, 40px);
+    line-height: 1.45;
+    color: #111111;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.services-dots {
+    display: flex;
+    justify-content: center;
+    gap: 13px;
+    margin-bottom: 20px;
+}
+
+.dot-decoration {
+    width: 6px;
+    height: 6px;
+    background: #CB3A1A;
+    transform: rotate(45deg);
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 25px;
+    max-width: 1230px;
+    margin: 0 auto;
+}
+
+.service-card {
+    background: #FFFFFF;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+}
+
+.service-image {
+    width: 100%;
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+    background-color: #D9D9D9;
+}
+
+.service-content {
+    padding: 30px;
+}
+
+.service-title {
+    font-family: 'Jost';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 35px;
+    color: #111111;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.service-description {
+    font-family: 'Jost';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #74787C;
+    margin-bottom: 30px;
+}
+
+.service-btn {
+    border: 1px solid #CB3A1A;
+    background: transparent;
+    color: #CB3A1A;
+    font-family: 'Jost';
+    font-weight: 600;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 12px 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.service-btn:hover {
+    background: #CB3A1A;
+    color: #FFFFFF;
+}
+
+.service-decoration-left,
+.service-decoration-right {
+    position: absolute;
+    width: 154px;
+    height: 121px;
+    background: url('decoration-image.png') center/cover;
+}
+
+.service-decoration-left {
+    left: 96px;
+    bottom: 50px;
+}
+
+.service-decoration-right {
+    right: 60px;
+    top: 60px;
+    width: 225px;
+    height: 204px;
+}
+
+/* Food Menu Section */
+.food-menu {
+    width: 100%;
+    padding: 80px 0;
+    background: #FFFFFF;
+}
+
+.food-menu-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.menu-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 60px;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.menu-badge {
+    display: inline-flex;
+    padding: 8px 16px;
+    background: #CB3A1A;
+    border-radius: 5px;
+    font-family: 'Jost';
+    font-weight: 600;
+    font-size: 14px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.menu-heading {
+    font-family: 'Jost';
+    font-weight: 700;
+    font-size: clamp(28px, 4vw, 40px);
+    line-height: 1.45;
+    color: #111111;
+    text-transform: uppercase;
+    flex: 1;
+    min-width: 300px;
+}
+
+.menu-filters {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    border: 1px solid #E8E7E7;
+    background: transparent;
+    color: #111111;
+    font-family: 'Jost';
+    font-weight: 600;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 12px 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.filter-btn.active,
+.filter-btn:hover {
+    border-color: #CB3A1A;
+    color: #CB3A1A;
+}
+
+.menu-content {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 60px;
+    align-items: start;
+}
+
+.menu-list {
+    background: #F6F6F6;
+    padding: 30px;
+}
+
+.menu-image {
+    width: 100%;
+    height: 260px;
+    background-size: cover;
+    background-position: center;
+    background-color: #D9D9D9;
+    margin-bottom: 40px;
+}
+
+.menu-items {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #D9D9D9;
+}
+
+.menu-item:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.menu-item-info {
+    flex: 1;
+}
+
+.menu-item-name {
+    font-family: 'Jost';
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 29px;
+    color: #111111;
+    margin-bottom: 5px;
+}
+
+.menu-item-description {
+    font-family: 'Jost';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #74787C;
+}
+
+.menu-item-price {
+    font-family: 'Jost';
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 23px;
+    color: #CB3A1A;
+    margin-left: 20px;
+}
+
+.menu-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.menu-card {
+    background: #FFFFFF;
+    border: 1px solid #DFDCDC;
+    box-shadow: 0px 8px 48px rgba(0, 0, 0, 0.04);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.menu-card:hover {
+    transform: translateY(-5px);
+}
+
+.menu-card-image {
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    background-color: #D9D9D9;
+}
+
+.menu-card-content {
+    padding: 20px;
+    text-align: center;
+}
+
+.menu-rating {
+    display: flex;
+    justify-content: center;
+    gap: 2px;
+    margin-bottom: 15px;
+}
+
+.menu-rating i {
+    color: #CB3A1A;
+    font-size: 14px;
+}
+
+.menu-card-title {
+    font-family: 'Jost';
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.4;
+    color: #111111;
+    margin-bottom: 10px;
+}
+
+.menu-card-price {
+    font-family: 'Jost';
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    color: #CB3A1A;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 1200px) {
+    .header-main {
+        padding: 20px 40px;
+    }
+    
+    .top-bar {
+        padding: 25px 40px 0;
+    }
+    
+    .about-container {
+        gap: 60px;
+    }
+    
+    .opening-hours-left,
+    .opening-hours-right {
+        display: none;
+    }
+}
+
+@media (max-width: 968px) {
+    .header-main {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+    
+    .navigation {
+        order: 2;
+    }
+    
+    .book-table-btn {
+        order: 3;
+        width: 200px;
+    }
+    
+    .top-bar {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        text-align: center;
+    }
+    
+    .contact-info {
+        justify-content: center;
+    }
+    
+    .about-container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        text-align: center;
+    }
+    
+    .about-image-container {
+        order: 2;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    
+    .about-content {
+        order: 1;
+    }
+    
+    .hero-buttons {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .slider-dots {
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+    
+    .dot {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        height: auto;
+        min-height: 120px;
+    }
+    
+    .header-main {
+        padding: 15px 20px;
+    }
+    
+    .top-bar {
+        padding: 15px 20px 0;
+        font-size: 14px;
+    }
+    
+    .contact-info {
+        flex-direction: column;
+        gap: 5px;
+    }
+    
+    .logo-text {
+        font-size: 20px;
+    }
+    
+    .navigation {
+        font-size: 12px;
+    }
+    
+    .book-table-btn {
+        width: 180px;
+        height: 45px;
+        font-size: 14px;
+    }
+    
+    .slider {
+        min-height: 70vh;
+    }
+    
+    .hero-frame {
+        width: 95%;
+        height: 70%;
+    }
+    
+    .about {
+        padding: 60px 20px;
+    }
+    
+    .decorative-element {
+        width: 150px;
+        height: 150px;
+        top: -20px;
+        left: -20px;
+    }
+    
+    .phone-section {
+        justify-content: center;
+    }
+    
+    .services {
+        padding: 60px 0;
+    }
+    
+    .services-container {
+        padding: 0 20px;
+    }
+    
+    .services-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+    
+    .service-content {
+        padding: 25px;
+    }
+    
+    .food-menu {
+        padding: 60px 0;
+    }
+    
+    .menu-title {
+        margin-bottom: 40px;
+    }
+    
+    .menu-list {
+        padding: 20px;
+    }
+    
+    .menu-cards {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 15px;
+    }
+    
+    .service-decoration-left,
+    .service-decoration-right {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-main {
+        padding: 10px 15px;
+    }
+    
+    .top-bar {
+        padding: 10px 15px 0;
+        font-size: 12px;
+    }
+    
+    .logo {
+        flex-direction: column;
+        gap: 5px;
+    }
+    
+    .logo-icon {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .logo-text {
+        font-size: 18px;
+    }
+    
+    .navigation {
+        font-size: 11px;
+        line-height: 1.2;
+    }
+    
+    .book-table-btn {
+        width: 160px;
+        height: 40px;
+        font-size: 12px;
+    }
+    
+    .slider {
+        min-height: 60vh;
+    }
+    
+    .hero-content {
+        padding: 0 20px;
+    }
+    
+    .about {
+        padding: 40px 15px;
+    }
+    
+    .about-container {
+        gap: 30px;
+    }
+    
+    .about-title {
+        font-size: 24px;
+    }
+    
+    .about-description {
+        font-size: 16px;
+    }
+    
+    .decorative-element {
+        width: 100px;
+        height: 100px;
+        top: -15px;
+        left: -15px;
+    }
+    
+    .phone-section {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+    
+    .slider-dots {
+        bottom: 20px;
+    }
+    
+    .dot {
+        width: 30px;
+        height: 30px;
+    }
+    
+    .services {
+        padding: 40px 0;
+    }
+    
+    .services-container {
+        padding: 0 15px;
+    }
+    
+    .services-title {
+        margin-bottom: 40px;
+    }
+    
+    .services-heading {
+        font-size: 24px;
+    }
+    
+    .service-content {
+        padding: 20px;
+    }
+    
+    .service-title {
+        font-size: 20px;
+    }
+    
+    .service-description {
+        font-size: 14px;
+    }
+    
+    .food-menu {
+        padding: 40px 0;
+    }
+    
+    .food-menu-container {
+        padding: 0 15px;
+    }
+    
+    .menu-heading {
+        font-size: 24px;
+    }
+    
+    .menu-filters {
+        gap: 5px;
+    }
+    
+    .filter-btn {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+    
+    .menu-cards {
+        grid-template-columns: 1fr;
+    }
+    
+    .menu-item-name {
+        font-size: 18px;
+    }
+    
+    .menu-item-description {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 968px) {
+    .services-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .menu-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .menu-title {
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+    }
+    
+    .menu-filters {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .menu-cards {
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
+}
