@@ -1,0 +1,702 @@
+/* Chef Details Page Styles */
+
+/* Breadcrumb Section */
+.breadcrumb {
+    position: relative;
+    width: 100%;
+    height: 527px;
+    background: #383838;
+    overflow: hidden;
+}
+
+.breadcrumb-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url('breadcrumb-bg.jpg'), url('breadcrumb-bg2.jpg'), url('breadcrumb-bg3.jpg'), url('breadcrumb-bg4.jpg'), rgba(10, 10, 10, 0.73);
+    background-size: cover;
+    background-position: center;
+}
+
+.breadcrumb-content {
+    position: relative;
+    z-index: 2;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.breadcrumb-title {
+    font-family: 'Jost';
+    font-weight: 600;
+    font-size: 72px;
+    line-height: 104px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+.breadcrumb-nav {
+    font-family: 'Jost';
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-top: 20px;
+}
+
+.breadcrumb-large-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Jost';
+    font-weight: 700;
+    font-size: 140px;
+    line-height: 202px;
+    text-align: center;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.01);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(7.5px);
+    padding: 0 20px;
+    white-space: nowrap;
+}
+
+/* Chef Details Section */
+.chef-details {
+    position: relative;
+    width: 100%;
+    height: 742px;
+    background: #F6F6F6;
+}
+
+.details-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #F6F6F6;
+}
+
+.details-container {
+    position: relative;
+    z-index: 2;
+    width: 1280px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    padding: 100px 0;
+    box-sizing: border-box;
+}
+
+.chef-content {
+    width: 552px;
+    height: 542px;
+    padding-right: 100px;
+    box-sizing: border-box;
+}
+
+.chef-name {
+    font-family: 'Jost';
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 58px;
+    color: #111111;
+    margin: 0 0 15px 0;
+}
+
+.chef-title {
+    font-family: 'Jost';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 23px;
+    color: #CB3A1A;
+    margin: 0 0 40px 0;
+}
+
+.chef-description {
+    font-family: 'Jost';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #74787C;
+    margin: 0 0 40px 0;
+}
+
+.chef-infos {
+    width: 544px;
+    height: 221px;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+    height: 100%;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    padding: 30px 0;
+    border-bottom: 1px solid #E6E3E3;
+    position: relative;
+}
+
+.info-item:nth-child(1),
+.info-item:nth-child(2) {
+    border-bottom: 1px solid #E6E3E3;
+}
+
+.info-item:nth-child(1),
+.info-item:nth-child(3) {
+    border-right: 1px solid #E6E3E3;
+    padding-right: 30px;
+}
+
+.info-item:nth-child(2),
+.info-item:nth-child(4) {
+    padding-left: 30px;
+}
+
+.info-icon {
+    width: 50px;
+    height: 50px;
+    background: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+    flex-shrink: 0;
+}
+
+.info-icon i {
+    font-size: 16px;
+    color: #CB3A1A;
+}
+
+.info-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.info-label {
+    font-family: 'Jost';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+    color: #74787C;
+    margin-bottom: 5px;
+}
+
+.info-value {
+    font-family: 'Jost';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    color: #111111;
+}
+
+.contact-btn {
+    width: 180px;
+    height: 50px;
+    background: #CB3A1A;
+    border: none;
+    font-family: 'Jost';
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 23px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-btn:hover {
+    background: #a12e15;
+}
+
+.chef-image {
+    width: 480px;
+    height: 542px;
+    flex-shrink: 0;
+}
+
+.chef-photo {
+    width: 100%;
+    height: 100%;
+    background: #D9D9D9;
+    background-size: cover;
+    background-position: center;
+}
+
+/* CTA Banner */
+.cta-banner {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    background: #D9D9D9;
+    overflow: hidden;
+}
+
+.cta-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url('cta-bg.jpg'), #D9D9D9;
+    background-size: cover;
+    background-position: center;
+}
+
+.cta-content {
+    position: relative;
+    z-index: 2;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 319px;
+    box-sizing: border-box;
+}
+
+.cta-text {
+    flex: 1;
+}
+
+.cta-subtitle {
+    font-family: 'Jost';
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 23px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin: 0 0 10px 0;
+}
+
+.cta-title {
+    font-family: 'Jost';
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 58px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+.cta-btn {
+    width: 200px;
+    height: 55px;
+    background: transparent;
+    border: 2px solid #FFFFFF;
+    font-family: 'Jost';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 23px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.cta-btn:hover {
+    background: #FFFFFF;
+    color: #CB3A1A;
+}
+
+/* Footer */
+.footer {
+    position: relative;
+    width: 100%;
+    height: 531px;
+    background: #111111;
+    padding: 120px 0 40px;
+    box-sizing: border-box;
+}
+
+.footer-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.95);
+    top: 0;
+}
+
+.footer-content {
+    position: relative;
+    z-index: 2;
+    width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    height: 240px;
+}
+
+.footer-section {
+    flex: 1;
+}
+
+.footer-section.about {
+    max-width: 281px;
+}
+
+.footer-section.links {
+    max-width: 108px;
+}
+
+.footer-section.other-links {
+    max-width: 116px;
+}
+
+.footer-section.newsletter {
+    max-width: 329px;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.footer-logo .logo-icon {
+    width: 60px;
+    height: 50px;
+    background: #CB3A1A;
+    margin-right: 20px;
+    position: relative;
+}
+
+.footer-logo .logo-icon::after {
+    content: '';
+    position: absolute;
+    left: 16.67%;
+    right: 81.03%;
+    top: 82.82%;
+    bottom: 15.09%;
+    background: #FFFFFF;
+}
+
+.footer-logo .logo-text {
+    font-family: 'Jost';
+    font-weight: 700;
+    font-size: 20px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    background: #FFFFFF;
+    color: #111111;
+    padding: 2px 8px;
+}
+
+.footer-divider {
+    width: 100%;
+    height: 2px;
+    background: #212121;
+    margin: 30px 0;
+}
+
+.footer-address {
+    font-family: 'Jost';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #FFFFFF;
+    margin: 0 0 40px 0;
+}
+
+.social-links {
+    display: flex;
+    gap: 10px;
+}
+
+.social-link {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: #D9D9D9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #000000;
+    transition: all 0.3s ease;
+}
+
+.social-link.facebook {
+    background: #CB3A1A;
+    color: #FFFFFF;
+}
+
+.social-link:hover {
+    background: #CB3A1A;
+    color: #FFFFFF;
+}
+
+.footer-title {
+    font-family: 'Jost';
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    color: #FFFFFF;
+    margin: 0 0 30px 0;
+    text-transform: uppercase;
+}
+
+.footer-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-menu li {
+    margin-bottom: 18px;
+}
+
+.footer-menu a {
+    font-family: 'Jost';
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 25px;
+    color: #FFFFFF;
+    text-decoration: none;
+    letter-spacing: 0.02em;
+    transition: color 0.3s ease;
+}
+
+.footer-menu a:hover {
+    color: #CB3A1A;
+}
+
+.footer-section.other-links .footer-menu a {
+    font-size: 16px;
+    line-height: 23px;
+}
+
+.newsletter-text {
+    font-family: 'Jost';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #FFFFFF;
+    margin: 0 0 30px 0;
+}
+
+.newsletter-form {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.newsletter-input {
+    width: 328px;
+    height: 60px;
+    background: #1D1C1C;
+    border: none;
+    padding: 0 70px 0 20px;
+    font-family: 'Gordita';
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 18px;
+    color: #FFFFFF;
+    letter-spacing: 0.02em;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.newsletter-input::placeholder {
+    color: #FFFFFF;
+}
+
+.newsletter-btn {
+    position: absolute;
+    right: 8px;
+    width: 44px;
+    height: 44px;
+    background: #CB3A1A;
+    border: none;
+    border-radius: 50%;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.newsletter-btn:hover {
+    background: #a12e15;
+}
+
+.footer-bottom {
+    position: relative;
+    z-index: 2;
+    width: 1280px;
+    margin: 60px auto 0;
+    padding: 0 20px;
+}
+
+.footer-bottom-line {
+    width: 100%;
+    height: 2px;
+    background: #212121;
+    margin-bottom: 30px;
+}
+
+.footer-bottom-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.copyright,
+.legal-links {
+    font-family: 'Jost';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+.legal-links {
+    text-transform: capitalize;
+}
+
+/* Responsive Design */
+@media (max-width: 1600px) {
+    .details-container {
+        width: 100%;
+        max-width: 1280px;
+        padding: 100px 50px;
+    }
+    
+    .footer-content {
+        width: 100%;
+        max-width: 1280px;
+        padding: 0 50px;
+    }
+    
+    .footer-bottom {
+        width: 100%;
+        max-width: 1280px;
+        padding: 0 50px;
+    }
+    
+    .cta-content {
+        padding: 0 50px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .breadcrumb-large-text {
+        font-size: 100px;
+        line-height: 140px;
+    }
+    
+    .details-container {
+        flex-direction: column;
+        height: auto;
+        padding: 50px;
+    }
+    
+    .chef-content {
+        width: 100%;
+        max-width: 600px;
+        padding-right: 0;
+        margin-bottom: 50px;
+    }
+    
+    .chef-image {
+        width: 100%;
+        max-width: 480px;
+        height: 400px;
+    }
+    
+    .chef-infos {
+        width: 100%;
+        max-width: 544px;
+    }
+    
+    .footer-content {
+        flex-wrap: wrap;
+        gap: 40px;
+        height: auto;
+    }
+    
+    .footer-section {
+        flex: 1 1 45%;
+    }
+    
+    .footer {
+        height: auto;
+        padding: 80px 0 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .breadcrumb {
+        height: 300px;
+    }
+    
+    .breadcrumb-title {
+        font-size: 48px;
+        line-height: 60px;
+    }
+    
+    .breadcrumb-large-text {
+        font-size: 60px;
+        line-height: 80px;
+    }
+    
+    .details-container {
+        padding: 30px;
+    }
+    
+    .chef-name {
+        font-size: 32px;
+        line-height: 40px;
+    }
+    
+    .info-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .info-item {
+        border-right: none !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+    
+    .cta-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+        padding: 30px;
+    }
+    
+    .cta-title {
+        font-size: 28px;
+        line-height: 36px;
+    }
+    
+    .footer-content {
+        flex-direction: column;
+        gap: 40px;
+    }
+    
+    .footer-section {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+    
+    .footer-bottom-content {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+}

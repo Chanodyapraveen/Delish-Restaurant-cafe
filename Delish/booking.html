@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Table - Delish Restaurant</title>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&family=Kumbh+Sans:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="booking-styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="top-bar">
+            <div>
+                <span class="hours-info">Mon-Wed: 11a-9p</span>
+                <span class="hours-info2">Thurs-Sat: 11a-10p</span>
+            </div>
+            <div class="contact-info">
+                <span class="email">reservations@Delish.com</span>
+                <span class="phone">123 456 7899</span>
+                <span class="address">296 Ridao Avenie Mor Berlin 251584</span>
+            </div>
+        </div>
+        
+        <div class="divider"></div>
+        
+        <div class="header-main">
+            <div class="logo">
+                <div class="logo-icon"></div>
+                <div class="logo-text">DELISH</div>
+            </div>
+            
+            <nav class="navigation">
+                HOME • PAGES • PAGES • SHOP • BLOG • CONTACT
+            </nav>
+            
+            <button class="book-table-btn">
+                BOOK A TABLE →
+            </button>
+        </div>
+    </header>
+
+    <!-- Breadcrumb Section -->
+    <section class="breadcrumb">
+        <div class="breadcrumb-bg"></div>
+        <div class="breadcrumb-content">
+            <h1 class="breadcrumb-title">BOOK A TABLE</h1>
+            <div class="breadcrumb-nav">HOME / BOOK A TABLE</div>
+            <div class="breadcrumb-large-text">RESERVATION</div>
+        </div>
+    </section>
+
+    <!-- Booking Form Section -->
+    <section class="booking-form-section">
+        <div class="form-bg">
+            <div class="form-container">
+                <form class="booking-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label class="form-label">NUMBER OF GUEST *</label>
+                            <select class="form-input" required>
+                                <option value="">Person</option>
+                                <option value="1">1 Person</option>
+                                <option value="2">2 Persons</option>
+                                <option value="3">3 Persons</option>
+                                <option value="4">4 Persons</option>
+                                <option value="5">5 Persons</option>
+                                <option value="6">6+ Persons</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="form-label">SELECT DATE*</label>
+                            <input type="date" class="form-input" placeholder="Person" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="form-label">SELECT TIME*</label>
+                            <select class="form-input" required>
+                                <option value="">Person</option>
+                                <option value="18:00">6:00 PM</option>
+                                <option value="18:30">6:30 PM</option>
+                                <option value="19:00">7:00 PM</option>
+                                <option value="19:30">7:30 PM</option>
+                                <option value="20:00">8:00 PM</option>
+                                <option value="20:30">8:30 PM</option>
+                                <option value="21:00">9:00 PM</option>
+                                <option value="21:30">9:30 PM</option>
+                                <option value="22:00">10:00 PM</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label class="form-label">YOUR NAME*</label>
+                            <input type="text" class="form-input" placeholder="Person" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="form-label">EMAIL ADDRESS *</label>
+                            <input type="email" class="form-input" placeholder="Person" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="form-label">PHONE NUMBER *</label>
+                            <input type="tel" class="form-input" placeholder="Person" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group full-width">
+                        <label class="form-label">TYPE YOUR SPECIAL MESSAGE*</label>
+                        <textarea class="form-textarea" placeholder="Tell us more about your special message" rows="5" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="form-submit-btn">
+                        BOOK A TABLE →
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Opening Hours Section -->
+    <section class="opening-hours-section">
+        <div class="opening-container">
+            <div class="restaurant-images">
+                <div class="main-image" style="background-image: url('restaurant-interior.jpg');"></div>
+                <div class="side-image" style="background-image: url('restaurant-food.jpg');"></div>
+            </div>
+            
+            <div class="opening-info">
+                <div class="opening-card">
+                    <h3 class="opening-title">OPENING HOURS</h3>
+                    <p class="opening-text">
+                        Lunch: 12Pm – 3Pm<br>
+                        Diner: 7Pm – 2Am (Last Order At 11:30Pm)
+                    </p>
+                </div>
+                
+                <div class="visit-card">
+                    <h3 class="visit-title">VISIT HOUR RESTAURANT</h3>
+                    <p class="visit-text">
+                        Eight avenue 487, NY,<br>
+                        T. +12 344 0567899<br>
+                        M. fidalgo@example.com
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Banner -->
+    <section class="cta-banner">
+        <div class="cta-bg"></div>
+        <div class="cta-content">
+            <div class="cta-text">
+                <p class="cta-subtitle">Book A Table For Your and Family Members</p>
+                <h2 class="cta-title">NEED A TABLE ON COFFEE HOUSE</h2>
+            </div>
+            <button class="cta-btn">BOOK A TABLE</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-bg"></div>
+        <div class="footer-content">
+            <!-- About Section -->
+            <div class="footer-section about">
+                <div class="footer-logo">
+                    <div class="logo-icon"></div>
+                    <div class="logo-text">DELISH</div>
+                </div>
+                <div class="footer-divider"></div>
+                <p class="footer-address">1234, Restaurant St, South City<br>New York 0124</p>
+                <div class="social-links">
+                    <a href="#" class="social-link facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="social-link instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="social-link twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="social-link linkedin">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Links Section -->
+            <div class="footer-section links">
+                <h3 class="footer-title">LINKS</h3>
+                <ul class="footer-menu">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Meet our team</a></li>
+                    <li><a href="#">Case stories</a></li>
+                    <li><a href="#">Latest News</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            
+            <!-- Other Links Section -->
+            <div class="footer-section other-links">
+                <h3 class="footer-title">OTHER LINK</h3>
+                <ul class="footer-menu">
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Creative Agency</a></li>
+                    <li><a href="#">Digital Agency</a></li>
+                    <li><a href="#">Marketing</a></li>
+                    <li><a href="#">Digital Services</a></li>
+                </ul>
+            </div>
+            
+            <!-- Newsletter Section -->
+            <div class="footer-section newsletter">
+                <h3 class="footer-title">NEWSLETTER</h3>
+                <p class="newsletter-text">Subscribe us & receive our offers and updates your inbox directly</p>
+                <div class="newsletter-form">
+                    <input type="email" placeholder="Email Address" class="newsletter-input">
+                    <button class="newsletter-btn">
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="footer-bottom-line"></div>
+            <div class="footer-bottom-content">
+                <p class="copyright">All rights received 2024. Delish Restaurant</p>
+                <p class="legal-links">Terms of use Privacy Policy</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

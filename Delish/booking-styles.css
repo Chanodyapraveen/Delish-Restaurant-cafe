@@ -1,0 +1,765 @@
+/* Booking Page Styles */
+
+/* Breadcrumb Section */
+.breadcrumb {
+    position: relative;
+    width: 100%;
+    height: 527px;
+    background: #383838;
+    overflow: hidden;
+}
+
+.breadcrumb-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url('breadcrumb-bg.jpg'), url('breadcrumb-bg2.jpg'), url('breadcrumb-bg3.jpg'), url('breadcrumb-bg4.jpg'), rgba(10, 10, 10, 0.73);
+    background-size: cover;
+    background-position: center;
+}
+
+.breadcrumb-content {
+    position: relative;
+    z-index: 2;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.breadcrumb-title {
+    font-family: 'Jost';
+    font-weight: 600;
+    font-size: 72px;
+    line-height: 104px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+.breadcrumb-nav {
+    font-family: 'Jost';
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-top: 20px;
+}
+
+.breadcrumb-large-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Jost';
+    font-weight: 700;
+    font-size: 140px;
+    line-height: 202px;
+    text-align: center;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.01);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(7.5px);
+    padding: 0 20px;
+    white-space: nowrap;
+}
+
+/* Booking Form Section */
+.booking-form-section {
+    position: relative;
+    width: 100%;
+    height: 743px;
+    background: #1A1A1A;
+    overflow: hidden;
+}
+
+.form-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111111;
+    background-image: radial-gradient(53.85% 80.88% at 49.96% 50%, rgba(41, 41, 41, 0.07) 83%, rgba(0, 0, 0, 0.35) 100%);
+}
+
+.form-container {
+    position: relative;
+    z-index: 2;
+    width: 1280px;
+    height: 503px;
+    margin: 0 auto;
+    padding: 120px 0;
+    box-sizing: border-box;
+}
+
+.booking-form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.form-row {
+    display: flex;
+    gap: 22px;
+}
+
+.form-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group.full-width {
+    width: 100%;
+}
+
+.form-label {
+    font-family: 'Kumbh Sans';
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+.form-input,
+.form-textarea {
+    width: 100%;
+    height: 55px;
+    background: #151515;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 0 20px;
+    font-family: 'Kumbh Sans';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.form-textarea {
+    height: 150px;
+    padding: 20px;
+    resize: vertical;
+}
+
+.form-input::placeholder,
+.form-textarea::placeholder {
+    color: #FFFFFF;
+    opacity: 0.7;
+}
+
+.form-input:focus,
+.form-textarea:focus {
+    border-color: #CB3A1A;
+}
+
+.form-submit-btn {
+    width: 245px;
+    height: 50px;
+    background: #CB3A1A;
+    border: none;
+    font-family: 'Jost';
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 23px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    cursor: pointer;
+    margin: 30px auto 0;
+    position: relative;
+    transition: background-color 0.3s ease;
+}
+
+.form-submit-btn::after {
+    content: '→';
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+}
+
+.form-submit-btn:hover {
+    background: #a12e15;
+}
+
+/* Opening Hours Section */
+.opening-hours-section {
+    position: relative;
+    width: 100%;
+    padding: 120px 0;
+    background: #F6F6F6;
+}
+
+.opening-container {
+    width: 1207px;
+    height: 625px;
+    margin: 0 auto;
+    display: flex;
+    gap: 80px;
+    align-items: center;
+}
+
+.restaurant-images {
+    position: relative;
+    width: 653px;
+    height: 625px;
+}
+
+.main-image {
+    width: 543px;
+    height: 625px;
+    background: #D9D9D9;
+    background-size: cover;
+    background-position: center;
+}
+
+.side-image {
+    position: absolute;
+    top: 260px;
+    right: 0;
+    width: 243px;
+    height: 292px;
+    background: #D9D9D9;
+    background-size: cover;
+    background-position: center;
+    border: 10px solid #FFFFFF;
+    box-sizing: border-box;
+}
+
+.opening-info {
+    width: 434px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.opening-card,
+.visit-card {
+    background: #FFFFFF;
+    border: 1px solid #E9E9E9;
+    box-sizing: border-box;
+    padding: 40px;
+}
+
+.opening-card {
+    height: 170px;
+}
+
+.visit-card {
+    height: 195px;
+}
+
+.opening-title,
+.visit-title {
+    font-family: 'Kumbh Sans';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    text-transform: uppercase;
+    color: #000000;
+    margin: 0 0 20px 0;
+}
+
+.opening-text,
+.visit-text {
+    font-family: 'Kumbh Sans';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #74787C;
+    margin: 0;
+}
+
+/* CTA Banner */
+.cta-banner {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    background: #D9D9D9;
+    overflow: hidden;
+}
+
+.cta-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url('cta-bg.jpg'), #D9D9D9;
+    background-size: cover;
+    background-position: center;
+}
+
+.cta-content {
+    position: relative;
+    z-index: 2;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 319px;
+    box-sizing: border-box;
+}
+
+.cta-text {
+    flex: 1;
+}
+
+.cta-subtitle {
+    font-family: 'Jost';
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 23px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin: 0 0 10px 0;
+}
+
+.cta-title {
+    font-family: 'Jost';
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 58px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+.cta-btn {
+    width: 200px;
+    height: 55px;
+    background: transparent;
+    border: 2px solid #FFFFFF;
+    font-family: 'Jost';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 23px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.cta-btn:hover {
+    background: #FFFFFF;
+    color: #CB3A1A;
+}
+
+/* Footer */
+.footer {
+    position: relative;
+    width: 100%;
+    height: 531px;
+    background: #111111;
+    padding: 120px 0 40px;
+    box-sizing: border-box;
+}
+
+.footer-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.95);
+    top: 0;
+}
+
+.footer-content {
+    position: relative;
+    z-index: 2;
+    width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    height: 240px;
+}
+
+.footer-section {
+    flex: 1;
+}
+
+.footer-section.about {
+    max-width: 281px;
+}
+
+.footer-section.links {
+    max-width: 108px;
+}
+
+.footer-section.other-links {
+    max-width: 116px;
+}
+
+.footer-section.newsletter {
+    max-width: 329px;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.footer-logo .logo-icon {
+    width: 60px;
+    height: 50px;
+    background: #CB3A1A;
+    margin-right: 20px;
+    position: relative;
+}
+
+.footer-logo .logo-icon::after {
+    content: '';
+    position: absolute;
+    left: 16.67%;
+    right: 81.03%;
+    top: 86.38%;
+    bottom: 11.96%;
+    background: #FFFFFF;
+}
+
+.footer-logo .logo-text {
+    font-family: 'Jost';
+    font-weight: 700;
+    font-size: 20px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    background: #FFFFFF;
+    color: #111111;
+    padding: 2px 8px;
+}
+
+.footer-divider {
+    width: 100%;
+    height: 2px;
+    background: #212121;
+    margin: 30px 0;
+}
+
+.footer-address {
+    font-family: 'Jost';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #FFFFFF;
+    margin: 0 0 40px 0;
+}
+
+.social-links {
+    display: flex;
+    gap: 10px;
+}
+
+.social-link {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: #D9D9D9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #000000;
+    transition: all 0.3s ease;
+}
+
+.social-link.facebook {
+    background: #CB3A1A;
+    color: #FFFFFF;
+}
+
+.social-link:hover {
+    background: #CB3A1A;
+    color: #FFFFFF;
+}
+
+.footer-title {
+    font-family: 'Jost';
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    color: #FFFFFF;
+    margin: 0 0 30px 0;
+    text-transform: uppercase;
+}
+
+.footer-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-menu li {
+    margin-bottom: 18px;
+}
+
+.footer-menu a {
+    font-family: 'Jost';
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 25px;
+    color: #FFFFFF;
+    text-decoration: none;
+    letter-spacing: 0.02em;
+    transition: color 0.3s ease;
+}
+
+.footer-menu a:hover {
+    color: #CB3A1A;
+}
+
+.footer-section.other-links .footer-menu a {
+    font-size: 16px;
+    line-height: 23px;
+}
+
+.newsletter-text {
+    font-family: 'Jost';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #FFFFFF;
+    margin: 0 0 30px 0;
+}
+
+.newsletter-form {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.newsletter-input {
+    width: 328px;
+    height: 60px;
+    background: #1D1C1C;
+    border: none;
+    padding: 0 70px 0 20px;
+    font-family: 'Gordita';
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 18px;
+    color: #FFFFFF;
+    letter-spacing: 0.02em;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.newsletter-input::placeholder {
+    color: #FFFFFF;
+}
+
+.newsletter-btn {
+    position: absolute;
+    right: 8px;
+    width: 44px;
+    height: 44px;
+    background: #CB3A1A;
+    border: none;
+    border-radius: 50%;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.newsletter-btn:hover {
+    background: #a12e15;
+}
+
+.footer-bottom {
+    position: relative;
+    z-index: 2;
+    width: 1280px;
+    margin: 60px auto 0;
+    padding: 0 20px;
+}
+
+.footer-bottom-line {
+    width: 100%;
+    height: 2px;
+    background: #212121;
+    margin-bottom: 30px;
+}
+
+.footer-bottom-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.copyright,
+.legal-links {
+    font-family: 'Jost';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+.legal-links {
+    text-transform: capitalize;
+}
+
+/* Responsive Design */
+@media (max-width: 1600px) {
+    .form-container {
+        width: 100%;
+        max-width: 1280px;
+        padding: 120px 50px;
+    }
+    
+    .opening-container {
+        width: 100%;
+        max-width: 1207px;
+        padding: 0 50px;
+    }
+    
+    .footer-content {
+        width: 100%;
+        max-width: 1280px;
+        padding: 0 50px;
+    }
+    
+    .footer-bottom {
+        width: 100%;
+        max-width: 1280px;
+        padding: 0 50px;
+    }
+    
+    .cta-content {
+        padding: 0 50px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .breadcrumb-large-text {
+        font-size: 100px;
+        line-height: 140px;
+    }
+    
+    .opening-container {
+        flex-direction: column;
+        height: auto;
+        gap: 50px;
+    }
+    
+    .restaurant-images {
+        width: 100%;
+        max-width: 653px;
+        height: 400px;
+    }
+    
+    .main-image {
+        width: 100%;
+        height: 400px;
+    }
+    
+    .side-image {
+        top: 50px;
+        right: 50px;
+        width: 200px;
+        height: 250px;
+    }
+    
+    .opening-info {
+        width: 100%;
+        max-width: 600px;
+        flex-direction: row;
+        gap: 30px;
+    }
+    
+    .opening-card,
+    .visit-card {
+        flex: 1;
+        height: auto;
+    }
+    
+    .footer-content {
+        flex-wrap: wrap;
+        gap: 40px;
+        height: auto;
+    }
+    
+    .footer-section {
+        flex: 1 1 45%;
+    }
+    
+    .footer {
+        height: auto;
+        padding: 80px 0 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .breadcrumb {
+        height: 300px;
+    }
+    
+    .breadcrumb-title {
+        font-size: 48px;
+        line-height: 60px;
+    }
+    
+    .breadcrumb-large-text {
+        font-size: 60px;
+        line-height: 80px;
+    }
+    
+    .form-container {
+        padding: 80px 30px;
+    }
+    
+    .form-row {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .form-group {
+        width: 100%;
+    }
+    
+    .form-submit-btn {
+        width: 100%;
+        max-width: 300px;
+    }
+    
+    .opening-info {
+        flex-direction: column;
+    }
+    
+    .cta-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+        padding: 30px;
+    }
+    
+    .cta-title {
+        font-size: 28px;
+        line-height: 36px;
+    }
+    
+    .footer-content {
+        flex-direction: column;
+        gap: 40px;
+    }
+    
+    .footer-section {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+    
+    .footer-bottom-content {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+}
