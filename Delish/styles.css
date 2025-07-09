@@ -133,7 +133,7 @@ body {
     height: 100vh;
     min-height: 850px;
     position: relative;
-    background: url('hero-bg.jpg') center/cover, rgba(10, 5, 4, 0.67);
+    background: url('images/Slider\ image.jpg') center/cover, rgba(10, 5, 4, 0.67);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -491,7 +491,7 @@ body {
     position: absolute;
     width: 154px;
     height: 121px;
-    background: url('decoration-image.png') center/cover;
+    background: url('images/Decoration.png') center/cover;
 }
 
 .service-decoration-left {
