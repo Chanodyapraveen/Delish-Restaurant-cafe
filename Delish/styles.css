@@ -707,6 +707,22 @@ body {
     color: #CB3A1A;
 }
 
+/* Background Section */
+.background-section {
+    position: relative;
+    width: 100%;
+    height: 715px;
+    display: flex;
+    justify-content: center;
+}
+
+.bg-element {
+    position: absolute;
+    width: 1280px;
+    height: 715px;
+    background: #F6F6F6;
+}
+
 /* Responsive Media Queries */
 @media (max-width: 1200px) {
     .header-main {
