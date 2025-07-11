@@ -1025,7 +1025,133 @@ body {
     .menu-item-description {
         font-size: 12px;
     }
+    .menu-cards {
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
 }
+
+/* Projects Section */
+.projects {
+    position: relative;
+    overflow: hidden;
+}
+
+.projects-container {
+    position: relative;
+    z-index: 1;
+}
+
+.control-btn:hover {
+    background: #CB3A1A;
+    border-color: #CB3A1A;
+    transform: scale(1.05);
+}
+
+.project-card:hover {
+    transform: scale(1.02);
+    z-index: 2;
+}
+
+.project-card:hover .project-overlay {
+    opacity: 1;
+}
+
+.special-card:hover {
+    background: rgba(203, 58, 26, 0.9) !important;
+    transform: scale(1.05);
+}
+
+.special-card:hover .view-icon {
+    transform: scale(1.1);
+    box-shadow: 0 4px 20px rgba(203, 58, 26, 0.3);
+}
+
+/* Projects Responsive */
+@media (max-width: 1400px) {
+    .projects-container {
+        max-width: 1200px;
+        padding: 0 20px;
+    }
+    
+    .projects-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 12px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .projects-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+    
+    .projects-grid {
+        grid-template-columns: repeat(3, 1fr);
+        height: 300px;
+    }
+    
+    .projects-heading {
+        font-size: 32px !important;
+        line-height: 1.2 !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .projects {
+        padding: 60px 0 !important;
+    }
+    
+    .projects-container {
+        padding: 0 15px !important;
+    }
+    
+    .projects-header {
+        margin-bottom: 40px !important;
+    }
+    
+    .projects-heading {
+        font-size: 28px !important;
+    }
+    
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+        height: 250px;
+        gap: 10px;
+    }
+    
+    .control-btn {
+        width: 45px !important;
+        height: 45px !important;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .projects {
+        padding: 40px 0 !important;
+    }
+    
+    .projects-grid {
+        grid-template-columns: 1fr;
+        height: auto;
+        gap: 15px;
+    }
+    
+    .project-card {
+        height: 200px;
+    }
+    
+    .projects-heading {
+        font-size: 24px !important;
+    }
+    
+    .projects-controls {
+        justify-content: center;
+        width: 100%;
+    }
+}
+
 
 @media (max-width: 968px) {
     .services-grid {
