@@ -1,0 +1,95 @@
+.header {
+    position: absolute;
+    width: 1920px;
+    height: 152px;
+    left: 0;
+    top: 0;
+    background: #111111;
+}
+
+.top-bar {
+    position: absolute;
+    width: 1760px;
+    height: 37px;
+    left: 80px;
+    top: 25px;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Jost';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+    color: #FFFFFF;
+}
+
+.dot {
+    width: 6px;
+    height: 6px;
+    background: #484848;
+    transform: rotate(-45deg);
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.header-divider {
+    position: absolute;
+    width: 1760px;
+    height: 1px;
+    left: 80px;
+    top: 61px;
+    background: #201F1F;
+}
+
+.main-nav {
+    position: relative;
+    margin-top: 82px;
+    margin-left: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-links {
+    width: 522px;
+    font-family: 'Kumbh Sans';
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.nav-links a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.book-table-btn {
+    width: 245px;
+    height: 50px;
+    border: 1px solid #CB3A1A;
+    background: transparent;
+    color: #FFFFFF;
+    font-family: 'Jost';
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 23px;
+    text-transform: uppercase;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.btn-arrow {
+    width: 14px;
+    height: 9px;
+    border: 1.5px solid #FFFFFF;
+    transform: rotate(45deg);
+}
