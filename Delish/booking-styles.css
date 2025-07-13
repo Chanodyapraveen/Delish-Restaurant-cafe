@@ -13,7 +13,7 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    background: url('breadcrumb-bg.jpg'), url('breadcrumb-bg2.jpg'), url('breadcrumb-bg3.jpg'), url('breadcrumb-bg4.jpg'), rgba(10, 10, 10, 0.73);
+    background: url('images/Booking.jpg'), rgba(10, 10, 10, 0.73);
     background-size: cover;
     background-position: center;
 }
@@ -408,13 +408,8 @@
     margin-bottom: 30px;
 }
 
-.footer-logo .logo-icon {
-    width: 60px;
-    height: 50px;
-    background: #CB3A1A;
-    margin-right: 20px;
-    position: relative;
-}
+
+
 
 .footer-logo .logo-icon::after {
     content: '';
