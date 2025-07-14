@@ -164,78 +164,15 @@
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="footer-bg"></div>
-        <div class="footer-content">
-            <!-- About Section -->
-            <div class="footer-section about">
-                <div class="footer-logo">
-                    <div class="logo-icon"></div>
-                    <img src="images/logo.png" alt="Delish" style="width: 165.83px; height: 50px;">
-                </div>
-                <div class="footer-divider"></div>
-                <p class="footer-address">1234, Restaurant St, South City<br>New York 0124</p>
-                <div class="social-links">
-                    <a href="#" class="social-link facebook">
-                        <i class="fab fa-facebook-f"></i>
-                    </a>
-                    <a href="#" class="social-link instagram">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                    <a href="#" class="social-link twitter">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                    <a href="#" class="social-link linkedin">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
-                </div>
-            </div>
-            
-            <!-- Links Section -->
-            <div class="footer-section links">
-                <h3 class="footer-title">LINKS</h3>
-                <ul class="footer-menu">
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Meet our team</a></li>
-                    <li><a href="#">Case stories</a></li>
-                    <li><a href="#">Latest News</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </div>
-            
-            <!-- Other Links Section -->
-            <div class="footer-section other-links">
-                <h3 class="footer-title">OTHER LINK</h3>
-                <ul class="footer-menu">
-                    <li><a href="#">Careers</a></li>
-                    <li><a href="#">Creative Agency</a></li>
-                    <li><a href="#">Digital Agency</a></li>
-                    <li><a href="#">Marketing</a></li>
-                    <li><a href="#">Digital Services</a></li>
-                </ul>
-            </div>
-            
-            <!-- Newsletter Section -->
-            <div class="footer-section newsletter">
-                <h3 class="footer-title">NEWSLETTER</h3>
-                <p class="newsletter-text">Subscribe us & receive our offers and updates your inbox directly</p>
-                <div class="newsletter-form">
-                    <input type="email" placeholder="Email Address" class="newsletter-input">
-                    <button class="newsletter-btn">
-                        <i class="fas fa-arrow-right"></i>
-                    </button>
-                </div>
-            </div>
-        </div>
-        
-        <div class="footer-bottom">
-            <div class="footer-bottom-line"></div>
-            <div class="footer-bottom-content">
-                <p class="copyright">All rights received 2024. Delish Restaurant</p>
-                <p class="legal-links">Terms of use Privacy Policy</p>
-            </div>
-        </div>
-    </footer>
+    <!-- Background Section END -->
+    
+    <div id="footer-placeholder"></div>
+    <script>
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            });
+    </script>
 </body>
 </html>
