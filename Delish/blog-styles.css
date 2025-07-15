@@ -13,116 +13,243 @@ body {
 
 /* Header */
 .header {
-    width: 100%;
+    position: absolute;
+    width: 1920px;
     height: 152px;
+    left: 0px;
+    top: 0px;
     background: #111111;
-    position: relative;
 }
 
 .top-bar {
-    width: 100%;
-    max-width: 1760px;
+    position: absolute;
+    width: 1760px;
     height: 37px;
-    margin: 0 auto;
-    padding: 25px 80px 0;
-    position: relative;
+    left: 80px;
+    top: 25px;
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
-    flex-wrap: wrap;
+    align-items: center;
 }
 
-.hours-info,
-.hours-info2 {
+.hours-info {
+    position: absolute;
+    width: 119px;
+    height: 11px;
+    left: 0px;
+    top: 0px;
     font-family: 'Jost';
+    font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 23px;
+    display: flex;
+    align-items: center;
     color: #FFFFFF;
-    margin-right: 20px;
+}
+
+.hours-info2 {
+    position: absolute;
+    width: 121px;
+    height: 11px;
+    left: 168px;
+    top: 0px;
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+.hours-divider {
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    left: 139px;
+    top: 1.76px;
+    background: #484848;
+    transform: rotate(-45deg);
 }
 
 .contact-info {
+    position: absolute;
+    left: 1142px;
+    top: 0px;
     display: flex;
+    align-items: center;
     gap: 20px;
-    flex-wrap: wrap;
-}
-
-.email,
-.phone,
-.address {
-    font-family: 'Jost';
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 23px;
-    color: #FFFFFF;
 }
 
 .email {
+    position: absolute;
+    width: 167px;
+    height: 11px;
+    left: 0px;
+    top: 0px;
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+    display: flex;
+    align-items: center;
     text-transform: lowercase;
+    color: #FFFFFF;
+}
+
+.phone {
+    position: absolute;
+    width: 98px;
+    height: 11px;
+    left: 216px;
+    top: 0px;
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+.address {
+    position: absolute;
+    width: 255px;
+    height: 11px;
+    left: 363px;
+    top: 0px;
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+.contact-divider-1 {
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    left: 187px;
+    top: 1.76px;
+    background: #484848;
+    transform: rotate(-45deg);
+}
+
+.contact-divider-2 {
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    left: 334px;
+    top: 1.76px;
+    background: #484848;
+    transform: rotate(-45deg);
 }
 
 .divider {
-    width: 100%;
-    max-width: 1760px;
+    position: absolute;
+    width: 1760px;
     height: 1px;
-    margin: 0 auto;
+    left: 80px;
+    top: 61px;
     background: #201F1F;
 }
 
 .header-main {
-    width: 100%;
-    max-width: 1760px;
-    margin: 0 auto;
-    padding: 20px 80px;
+    position: absolute;
+    width: 1760px;
+    height: 50px;
+    left: 80px;
+    top: 82px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
 }
 
 .logo {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-}
-
-.logo-text {
-    font-family: 'Jost';
-    font-weight: 700;
-    font-size: 24px;
-    color: #FFFFFF;
+    position: absolute;
+    width: 165.83px;
+    height: 50px;
+    left: 0px;
+    top: 0px;
 }
 
 .navigation {
+    position: absolute;
+    width: 522px;
+    height: 12px;
+    left: calc(50% - 522px/2);
+    top: 19px;
     font-family: 'Kumbh Sans';
+    font-style: normal;
     font-weight: 700;
     font-size: 14px;
     line-height: 17px;
-    color: #FFFFFF;
-    text-transform: uppercase;
+    display: flex;
+    align-items: center;
     text-align: center;
-    flex: 1;
+    text-transform: uppercase;
+    color: #FFFFFF;
 }
 
 .book-table-btn {
+    position: absolute;
     width: 245px;
     height: 50px;
+    left: 1515px;
+    top: 0px;
     border: 1px solid #CB3A1A;
     background: transparent;
-    color: #FFFFFF;
     font-family: 'Jost';
+    font-style: normal;
     font-weight: 600;
     font-size: 16px;
+    line-height: 23px;
+    display: flex;
+    align-items: center;
     text-transform: uppercase;
+    color: #FFFFFF;
     cursor: pointer;
-    flex-shrink: 0;
+}
+
+.btn-text {
+    position: absolute;
+    width: 114px;
+    height: 23px;
+    left: 30px;
+    top: 14px;
+}
+
+.btn-arrow {
+    position: absolute;
+    width: 14px;
+    height: 9px;
+    left: 206px;
+    top: 20px;
+    border: 1.5px solid #FFFFFF;
+}
+
+.btn-line {
+    position: absolute;
+    width: 30px;
+    height: 0px;
+    left: 158px;
+    top: 25px;
+    border: 1px solid #FFFFFF;
 }
 /* Breadcrumb */
 .breadcrumb {
-    position: relative;
-    width: 100%;
+    position: absolute;
+    width: 1920px;
     height: 527px;
+    left: 0px;
+    top: 152px;
     background: #383838;
     background-image: url('images/Latest\ News.jpg');
     background-size: cover;
@@ -132,7 +259,7 @@ body {
 
 .breadcrumb-bg {
     position: absolute;
-    width: 100%;
+    width: 1920px;
     height: 527px;
     left: 0px;
     top: 0px;
@@ -150,6 +277,11 @@ body {
 }
 
 .hero-title {
+    position: absolute;
+    width: 486px;
+    height: 50px;
+    left: 717px;
+    top: 218px;
     font-family: 'Jost';
     font-style: normal;
     font-weight: 600;
@@ -158,10 +290,14 @@ body {
     text-align: center;
     text-transform: uppercase;
     color: #FFFFFF;
-    margin-bottom: 20px;
 }
 
 .breadcrumb-text {
+    position: absolute;
+    width: 154px;
+    height: 10px;
+    left: 883px;
+    top: 298px;
     font-family: 'Jost';
     font-style: normal;
     font-weight: 600;
@@ -170,10 +306,14 @@ body {
     text-align: center;
     text-transform: uppercase;
     color: #FFFFFF;
-    margin-bottom: 40px;
 }
 
 .hero-outline {
+    position: absolute;
+    width: 1153px;
+    height: 98px;
+    left: 384px;
+    top: 379px;
     font-family: 'Jost';
     font-style: normal;
     font-weight: 700;
@@ -184,33 +324,115 @@ body {
     color: rgba(255, 255, 255, 0.01);
     border: 1px solid rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(7.5px);
-    padding: 20px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-/* Blog Lists */
-.blog-lists {
-    position: absolute;
-    width: 1280px;
-    height: 3077px;
-    left: 320px;
-    top: 799px;
+body {
+  font-family: 'Jost', sans-serif;
+  background: #fffefe;
+  margin: 0;
+  padding: 40px;
 }
 
-/* Blog Articles */
-.blog-article {
+/* First Blog Article */
+.card {
     position: absolute;
     width: 829px;
     height: 723px;
     left: 320px;
+    top: 799px;
     background: #F6F6F6;
 }
 
-.blog-article:nth-child(1) { top: 799px; }
-.blog-article:nth-child(2) { top: 1552px; }
-.blog-article:nth-child(3) { top: 2305px; }
-.blog-article:nth-child(4) { top: 3058px; }
+.card-image {
+  position: relative;
+  width: 100%;
+  height: 450px;
+}
 
-.article-image {
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.category-tag {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  background: #CB3A1A;
+  color: #fff;
+  padding: 5px 17px;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+}
+
+.card-content {
+  padding: 40px;
+}
+
+.info {
+  display: flex;
+  gap: 20px;
+  font-size: 16px;
+  color: #74787C;
+  margin-bottom: 20px;
+}
+
+.info i {
+  color: #CB3A1A;
+  margin-right: 8px;
+}
+
+.title {
+  font-size: 30px;
+  font-weight: 700;
+  color: #111;
+  text-transform: uppercase;
+  margin: 0 0 20px 0;
+}
+
+.description {
+  font-size: 16px;
+  line-height: 26px;
+  color: #74787C;
+  margin: 0 0 30px 0;
+}
+
+.divider {
+  height: 1px;
+  background: #DDDEE1;
+  margin-bottom: 20px;
+}
+
+.read-details {
+  font-size: 16px;
+  font-weight: 600;
+  color: #CB3A1A;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Second Blog Article */
+.second-card {
+    position: absolute;
+    width: 829px;
+    height: 723px;
+    left: 320px;
+    top: 1552px;
+    background: #F6F6F6;
+}
+
+.second-card .card-image {
     position: absolute;
     width: 829px;
     height: 450px;
@@ -219,68 +441,103 @@ body {
     background: #D9D9D9;
 }
 
-.article-tag {
+.second-card .category-tag {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     padding: 5px 17px;
+    gap: 10px;
     position: absolute;
     width: 95px;
     height: 30px;
     left: 40px;
     top: 40px;
     background: #CB3A1A;
-}
-
-.tag-text {
     font-family: 'Jost';
+    font-style: normal;
     font-weight: 600;
     font-size: 14px;
     line-height: 20px;
     text-transform: uppercase;
     color: #FFFFFF;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
 }
 
-.article-content {
+.second-card .card-content {
     position: absolute;
     width: 749px;
-    height: 199px;
+    height: 204px;
     left: 40px;
-    top: 490px;
+    top: 485px;
 }
 
-.article-info {
+.second-card .info {
     position: absolute;
     width: 241px;
-    height: 12px;
+    height: 23px;
     left: 0;
     top: 0;
-    display: flex;
-    align-items: center;
-    gap: 20px;
 }
 
-.info-date {
-    font-family: 'Jost';
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 23px;
-    color: #74787C;
-}
-
-.info-author {
-    font-family: 'Jost';
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 23px;
-    color: #74787C;
-}
-
-.article-title {
+.second-card .date {
     position: absolute;
-    width: 100%;
-    top: 38px;
+    width: 97px;
+    height: 23px;
+    left: 22px;
+    top: 0;
     font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+    color: #74787C;
+}
+
+.second-card .date i {
+    position: absolute;
+    width: 14px;
+    height: 12px;
+    left: -22px;
+    top: 5px;
+    font-size: 16px;
+    color: #CB3A1A;
+}
+
+.second-card .author {
+    position: absolute;
+    width: 70px;
+    height: 23px;
+    left: 171px;
+    top: 0;
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+    color: #74787C;
+}
+
+.second-card .author i {
+    position: absolute;
+    width: 14px;
+    height: 12px;
+    left: -22px;
+    top: 5px;
+    font-size: 16px;
+    color: #CB3A1A;
+}
+
+.second-card .title {
+    position: absolute;
+    width: 681px;
+    height: 21px;
+    left: 0;
+    top: 43px;
+    font-family: 'Jost';
+    font-style: normal;
     font-weight: 700;
     font-size: 30px;
     line-height: 43px;
@@ -288,283 +545,366 @@ body {
     color: #111111;
 }
 
-.article-excerpt {
+.second-card .description {
     position: absolute;
-    width: 100%;
-    top: 88px;
+    width: 749px;
+    height: 38px;
+    left: 0;
+    top: 93px;
     font-family: 'Jost';
+    font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 26px;
     color: #74787C;
 }
 
-.article-divider {
+.second-card .divider {
     position: absolute;
     width: 749px;
     height: 1px;
     left: 0;
-    top: 156px;
-    background: #DDDEE1;
+    top: 161px;
+    background: #E1DFDE;
 }
 
-.read-more {
+.second-card .read-details {
     position: absolute;
     width: 131px;
     height: 23px;
     left: 0;
-    top: 176px;
+    top: 181px;
     font-family: 'Jost';
+    font-style: normal;
     font-weight: 600;
     font-size: 16px;
     line-height: 23px;
     text-transform: uppercase;
     color: #CB3A1A;
+    text-decoration: none;
 }
 
-/* Sidebar */
-.sidebar {
+/* Third Blog Article */
+.third-card {
     position: absolute;
-    width: 387px;
-    height: 1581px;
-    left: 1213px;
-    top: 799px;
-}
-
-/* Search */
-.search-section {
-    position: absolute;
-    width: 387px;
-    height: 135px;
-    left: 0;
-    top: 0;
+    width: 829px;
+    height: 723px;
+    left: 320px;
+    top: 2305px;
     background: #F6F6F6;
 }
 
-.search-form {
-    position: relative;
-    margin: 40px;
-}
-
-.search-input {
-    width: 307px;
-    height: 55px;
-    background: #FFFFFF;
-    border: none;
-    padding: 0 20px;
-    font-family: 'Jost';
-    font-size: 16px;
-    color: #74787C;
-}
-
-.search-btn {
+.third-card .card-image {
     position: absolute;
-    width: 55px;
-    height: 55px;
-    right: 0;
-    top: 0;
-    background: #CB3A1A;
-    border: none;
-    color: #FFFFFF;
-    cursor: pointer;
-}
-
-/* Recent Posts */
-.recent-posts {
-    position: absolute;
-    width: 387px;
-    height: 395px;
+    width: 829px;
+    height: 450px;
     left: 0;
-    top: 165px;
-    background: #F6F6F6;
+    top: 0;
+    background: #D9D9D9;
 }
 
-.section-title {
+.third-card .category-tag {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 17px;
+    gap: 10px;
     position: absolute;
+    width: 95px;
+    height: 30px;
     left: 40px;
     top: 40px;
+    background: #CB3A1A;
     font-family: 'Jost';
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 29px;
-    text-transform: uppercase;
-    color: #111111;
-}
-
-.post-item {
-    position: absolute;
-    width: 280px;
-    height: 77px;
-    left: 40px;
-    display: flex;
-    gap: 20px;
-}
-
-.post-item:nth-child(2) { top: 84px; }
-.post-item:nth-child(3) { top: 181px; }
-.post-item:nth-child(4) { top: 278px; }
-
-.post-thumbnail {
-    width: 77px;
-    height: 77px;
-    background: #D9D9D9;
-}
-
-.post-content h4 {
-    font-family: 'Jost';
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 22px;
-    color: #111111;
-    margin-bottom: 5px;
-}
-
-.post-author {
-    font-family: 'Jost';
-    font-weight: 400;
+    font-style: normal;
+    font-weight: 600;
     font-size: 14px;
     line-height: 20px;
-    color: #74787C;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
 }
 
-/* Categories */
-.categories {
+.third-card .card-content {
     position: absolute;
-    width: 387px;
-    height: 354px;
-    left: 0;
-    top: 590px;
-    background: #F6F6F6;
-}
-
-.category-item {
-    position: absolute;
-    width: 307px;
-    height: 50px;
+    width: 749px;
+    height: 204px;
     left: 40px;
-    background: #FFFFFF;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 20px;
+    top: 485px;
 }
 
-.category-item:nth-child(2) { top: 84px; }
-.category-item:nth-child(3) { top: 144px; }
-.category-item:nth-child(4) { top: 204px; }
-.category-item:nth-child(5) { top: 264px; }
+.third-card .info {
+    position: absolute;
+    width: 241px;
+    height: 23px;
+    left: 0;
+    top: 0;
+}
 
-.category-name {
+.third-card .date {
+    position: absolute;
+    width: 97px;
+    height: 23px;
+    left: 22px;
+    top: 0;
     font-family: 'Jost';
+    font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 23px;
     color: #74787C;
 }
 
-.category-arrow {
+.third-card .date i {
+    position: absolute;
+    width: 14px;
+    height: 12px;
+    left: -22px;
+    top: 5px;
+    font-size: 16px;
     color: #CB3A1A;
 }
 
-/* Gallery */
-.gallery-section {
+.third-card .author {
     position: absolute;
-    width: 387px;
-    height: 328px;
-    left: 0;
-    top: 974px;
-    background: #F6F6F6;
-}
-
-.gallery-grid {
-    position: absolute;
-    left: 40px;
-    top: 67px;
-    display: grid;
-    grid-template-columns: repeat(3, 95px);
-    grid-template-rows: repeat(2, 95px);
-    gap: 10px;
-}
-
-.gallery-item {
-    width: 95px;
-    height: 95px;
-    background: #D9D9D9;
-}
-
-/* Popular Tags */
-.popular-tags {
-    position: absolute;
-    width: 387px;
-    height: 249px;
-    left: 0;
-    top: 1332px;
-    background: #F6F6F6;
-}
-
-.tags-container {
-    position: absolute;
-    width: 305px;
-    left: 40px;
-    top: 67px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-}
-
-.tag {
-    height: 35px;
-    background: #FFFFFF;
-    padding: 0 15px;
-    display: flex;
-    align-items: center;
+    width: 70px;
+    height: 23px;
+    left: 171px;
+    top: 0;
     font-family: 'Jost';
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 17px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+    color: #74787C;
+}
+
+.third-card .author i {
+    position: absolute;
+    width: 14px;
+    height: 12px;
+    left: -22px;
+    top: 5px;
+    font-size: 16px;
+    color: #CB3A1A;
+}
+
+.third-card .title {
+    position: absolute;
+    width: 620px;
+    height: 21px;
+    left: 0;
+    top: 43px;
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 43px;
     text-transform: uppercase;
     color: #111111;
 }
 
-.tag.active {
-    background: #CB3A1A;
-    color: #FFFFFF;
-}
-
-/* Pagination */
-.pagination {
+.third-card .description {
     position: absolute;
-    width: 250px;
-    height: 55px;
-    left: 320px;
-    top: 3821px;
-    display: flex;
-    gap: 10px;
-}
-
-.page-number {
-    width: 55px;
-    height: 55px;
-    background: #F6F6F6;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    width: 749px;
+    height: 38px;
+    left: 0;
+    top: 93px;
     font-family: 'Jost';
-    font-weight: 500;
+    font-style: normal;
+    font-weight: 400;
     font-size: 16px;
-    color: #111111;
-    cursor: pointer;
+    line-height: 26px;
+    color: #74787C;
 }
 
-.page-number.active {
-    background: #CB3A1A;
-    color: #FFFFFF;
+.third-card .divider {
+    position: absolute;
+    width: 749px;
+    height: 1px;
+    left: 0;
+    top: 161px;
+    background: #E1DFDE;
 }
 
-.page-arrow {
+.third-card .read-details {
+    position: absolute;
+    width: 131px;
+    height: 23px;
+    left: 0;
+    top: 181px;
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 23px;
+    text-transform: uppercase;
+    color: #CB3A1A;
+    text-decoration: none;
+}
+
+/* Fourth Blog Article */
+.fourth-card {
+    position: absolute;
+    width: 829px;
+    height: 723px;
+    left: 320px;
+    top: 3058px;
     background: #F6F6F6;
+}
+
+.fourth-card .card-image {
+    position: absolute;
+    width: 829px;
+    height: 450px;
+    left: 0;
+    top: 0;
+    background: #D9D9D9;
+}
+
+.fourth-card .category-tag {
     display: flex;
-    align-items: center;
+    flex-direction: row;
     justify-content: center;
+    align-items: center;
+    padding: 5px 17px;
+    gap: 10px;
+    position: absolute;
+    width: 95px;
+    height: 30px;
+    left: 40px;
+    top: 40px;
+    background: #CB3A1A;
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.fourth-card .card-content {
+    position: absolute;
+    width: 749px;
+    height: 204px;
+    left: 40px;
+    top: 485px;
+}
+
+.fourth-card .info {
+    position: absolute;
+    width: 241px;
+    height: 23px;
+    left: 0;
+    top: 0;
+}
+
+.fourth-card .date {
+    position: absolute;
+    width: 97px;
+    height: 23px;
+    left: 22px;
+    top: 0;
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+    color: #74787C;
+}
+
+.fourth-card .date i {
+    position: absolute;
+    width: 14px;
+    height: 12px;
+    left: -22px;
+    top: 5px;
+    font-size: 16px;
+    color: #CB3A1A;
+}
+
+.fourth-card .author {
+    position: absolute;
+    width: 70px;
+    height: 23px;
+    left: 171px;
+    top: 0;
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+    color: #74787C;
+}
+
+.fourth-card .author i {
+    position: absolute;
+    width: 14px;
+    height: 12px;
+    left: -22px;
+    top: 5px;
+    font-size: 16px;
+    color: #CB3A1A;
+}
+
+.fourth-card .title {
+    position: absolute;
+    width: 570px;
+    height: 21px;
+    left: 0;
+    top: 43px;
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 43px;
+    text-transform: uppercase;
     color: #111111;
 }
+
+.fourth-card .description {
+    position: absolute;
+    width: 749px;
+    height: 38px;
+    left: 0;
+    top: 93px;
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #74787C;
+}
+
+.fourth-card .divider {
+    position: absolute;
+    width: 749px;
+    height: 1px;
+    left: 0;
+    top: 161px;
+    background: #E1DFDE;
+}
+
+.fourth-card .read-details {
+    position: absolute;
+    width: 131px;
+    height: 23px;
+    left: 0;
+    top: 181px;
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 23px;
+    text-transform: uppercase;
+    color: #CB3A1A;
+    text-decoration: none;
+}
+
